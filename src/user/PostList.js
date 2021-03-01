@@ -1,18 +1,8 @@
 import React from "react";
-import {useParams, Link, Route, Switch, useRouteMatch} from "react-router-dom";
+import {Route, Switch, useRouteMatch} from "react-router-dom";
 import Post from "./Post";
 import PostLink from "./PostLink";
 import NoPostSelectedMessage from "./NoPostSelectedMessage";
-
-/*
-  TODO: Update the below so that the components show on the appropriate route.
-
-  The <NoPostSelectedMessage /> component should show up on the following route:
-  /users/:userId/posts
-
-  The <Post /> component should show up on the following route:
-  /users/:userId/posts/:postId
-*/
 
 export const PostList = ({ posts }) => {
   const { url } = useRouteMatch();
